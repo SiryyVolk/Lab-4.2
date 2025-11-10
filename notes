@@ -1,0 +1,10 @@
+Run "python lab4-2_probe.py scanme.nmap.org 22" 
+and "python lab4-2_probe.py scanme.nmap.org 9999" and note results.
+
+Run a small scan: python lab4-2_scan.py --host scanme.nmap.org --ports 20-1024 --workers 30 --timeout 1.0
+Observe runtime vs. port range vs. workers; record timings in lab4-2_activity.log.
+
+For each open port found in Phase 3, run python lab4-2_banner.py scanme.nmap.org <port> and save the 
+banner to banners.csv or banners.json.
+[port 22 was found after the scan enter: python lab4-2_banner.py scanme.nmap.org 22]
+
